@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -39,7 +40,8 @@
 			<a href="/login">Sign In / Sign Up</a>
 		</div>
 	</nav>
-	<article class="container mt-3">
+
+	<!-- <div class="container alert-container">
 		<div class="row d-none d-sm-block">
 			<div class="col-12">
 				<div class="alert alert-warning">
@@ -48,21 +50,28 @@
 				</div>
 			</div>
 		</div>
+	</div> -->
+
+	<div class="container-fluid callout-container">
+      <div class="opaque-overlay">&nbsp;</div>
 		<div class="raw">
 			<div class="col-12">
 				<section class="call out jumbotron text-center">
-					<h1>The finest whiskeys delivered to your doorstep.</h1>
+					<h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+                    <hr class="block-divider block-divider--orange">
 					<p class="lead">Sign up today to start receiving the world's best whiskeys every month.
 						<s class="d-none d-sm-inline">$19.99</s>
 						<span class="d-inline d-sm-none"><br></span>
 						<strong><mark>First one is free!</mark></strong> </p>
-					<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
+					<button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
 					<p class="text-muted">
 						<small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
 				</section>
 			</div>
 		</div>
-		<hr>
+	</div>
+
+	<div class="container quotes-container">
 		<section class="quotes">
 			<div class="row">
 				<div class="col-12 my-5">
@@ -99,7 +108,9 @@
 						</div>
 					</div>
 		</section>
-		<hr>
+	</div>
+
+	<div class="features-container">
 		<section class="features">
 			<div class="row">
 				<div class="col-12 my-5">
@@ -136,7 +147,8 @@
 				</div>
 			</div>
 		</section>
-	</article>
+	</div>
+
 	<div class="modal" tabindex="-1" role="dialog" id="signUpModal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -157,11 +169,11 @@
 							<label for="password">Password</label>
 							<input type="password" class="form-control" id="password" placeholder="Password">
                         </div>
-                        <div class="form-group">
-							<label for="repeatPassword">Repeat Password</label>
-							<input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password">
+							<div class="form-group">
+								<label for="repeatPassword">Repeat Password</label>
+								<input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password">
                         </div>
-							<button type="submit" class="btn btn-success">Submit</button>
+								<button type="submit" class="btn btn-success">Submit</button>
 					</form>
 				</div>
 			</div>
