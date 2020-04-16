@@ -23,6 +23,15 @@ body{
     border-color: #eec802;
 }
 
+.site-wide-alert a {
+    color: #f05f40;
+    text-decoration: none;
+}
+
+.site-wide-alert a:hover {
+    color: #df4929;
+}
+
 .callout-container{
     height: 100vh;
 
@@ -75,8 +84,8 @@ body{
 /* Block-dividers */
 
 .block-divider{
-    width: 75px;
-    height: 5px;
+    width: 100px;
+    height: 2px;
     border: 0;
     background-color: #444;
 }
@@ -90,7 +99,8 @@ body{
 }
 
 .block-divider--short{
-    width: 35px;
+    width: 80px;
+    height: 1px;
 }
 
 /* Content Containers */
@@ -130,6 +140,25 @@ body{
     font-weight: bold;
 }
 
+/* Menu */
+
+.dropdown-menu {
+    background-color:#f05f40;
+}
+
+.dropdown-menu a{
+    color: white;
+}
+
+/* lead */
+
+.lead mark{
+    background-color: #eec802;
+    color: #856404;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
 /* Jumbotron */
 
 .jumbotron{
@@ -152,6 +181,26 @@ body{
     font-size: 60%;
     font-style: italic;
     color: #d0d0d0;
+}
+
+/* form */
+
+.model-body{
+    background-color: #eec802;
+}
+
+.form-group{
+    background-color: #eec802;
+    color: white;
+}
+
+.modal-header{
+    background-color: #f05f40;
+    color: white;
+}
+
+.close{
+    color: white;
 }
 
 /* Buttons */
@@ -201,4 +250,9 @@ body{
     margin-top: 10px;
     color: #f05f40;
 
+}
+
+.feature .badge{
+    background-color: #eec802;
+    border-radius: 15px;
 }
