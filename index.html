@@ -44,13 +44,14 @@
 							<a class="dropdown-item" href="#">American</a>
 						</div>
 					</li>
-					<li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a>
+					<li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" data-toggle="modal"
+							data-target="#signInModal" href="/login">Sign In</a>
 					</li>
 				</ul>
 			</div>
 			<div class="d-none d-md-block">
 				<p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
-				<a href="/login" class="btn btn--cta btn--red">Sign In / Sign Up</a>
+				<a href="/login" class="btn btn--cta btn--red" data-toggle="modal" data-target="#signInModal">Sign In</a>
 			</div>
 		</nav>
 	</div>
@@ -109,7 +110,7 @@
 									<div class="media-body">
 										<blockquote class="blockquote">
 											<p>I haven't been sober for months.</p>
-											<p>- Jane Doe</p>
+											<p>- Jack Doe</p>
 										</blockquote>
 									</div>
 								</div>
@@ -127,7 +128,7 @@
 				<div class="row">
 					<div class="col-12 page-header">
 						<h2 class="text-uppercase">features:</h2>
-                        <hr class="block-divider block-divider--short block-divider--white">
+						<hr class="block-divider block-divider--short block-divider--white">
 					</div>
 				</div>
 				<div class="row">
@@ -192,6 +193,35 @@
 								<input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password">
                         </div>
 								<button type="submit" class="btn btn--cta btn--red">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    	<div class="modal" tabindex="-1" role="dialog" id="signInModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Sign In To Whiskey Drop!</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="sign-in">Email address</label>
+							<input type="email" class="form-control" id="sign-in" aria-describedby="emailHelpsign-in" placeholder="Enter email">
+							<small id="emailHelpsign-in" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group">
+							<label for="password">Password</label>
+							<input type="password" class="form-control" id="passwordsign-in" placeholder="Password">
+                        </div>
+                        <div>
+								<button type="submit" class="btn btn--cta btn--red">Submit</button>
+                        </div>
 					</form>
 				</div>
 			</div>
