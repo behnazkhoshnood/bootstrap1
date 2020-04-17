@@ -14,6 +14,7 @@
 </head>
 
 <body>
+<!-- Nav Alert -->
 	<div class="container-fluid navalert-container">
 		<div class="container-fluid alert-container">
 			<div class="row d-none d-sm-block">
@@ -26,6 +27,9 @@
 				</div>
 			</div>
 		</div>
+<!-- /Nav Alert -->
+
+<!-- Nav Bar -->
 		<nav class="navbar navbar-dark navbar-expand-sm">
 			<a href="/" class="navbar-brand">Whisky Drop</a>
 			<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,10 +55,13 @@
 			</div>
 			<div class="d-none d-md-block">
 				<p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
-				<a href="/login" class="btn btn--cta btn--red" data-toggle="modal" data-target="#signInModal">Sign In</a>
+				<a href="/login" class="btn btn--cta btn--red" data-toggle="modal" data-target="#signInModal">Sign
+					In</a>
 			</div>
 		</nav>
 	</div>
+    <!-- /Nav Bar -->
+
 	<!-- .callout -->
 	<div class="container-fluid callout-container">
 		<div class="opaque-overlay">&nbsp;</div>
@@ -67,7 +74,9 @@
 						<s class="d-none d-sm-inline">$19.99</s>
 						<span class="d-inline d-sm-none"><br></span>
 						<strong><mark>First one is free!</mark></strong> </p>
-					<button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
+					<a href="/login" class="btn btn-lg btn--cta btn--red" data-toggle="modal"
+						data-target="#signUpModal">Sign
+						Up!</a>
 					<p class="text-muted">
 						<small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
 				</section>
@@ -168,6 +177,8 @@
 		</div>
 	</div>
 
+<!-- SignUpModal -->
+
 	<div class="modal" tabindex="-1" role="dialog" id="signUpModal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -198,12 +209,14 @@
 			</div>
 		</div>
 	</div>
+<!-- /SignUpModal -->
 
-    	<div class="modal" tabindex="-1" role="dialog" id="signInModal">
+<!-- SignInModal -->
+	<div class="modal" tabindex="-1" role="dialog" id="signInModal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Sign In To Whiskey Drop!</h5>
+					<h5 class="modal-title">Sign In To Whiskey Drop.</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -218,15 +231,23 @@
 						<div class="form-group">
 							<label for="password">Password</label>
 							<input type="password" class="form-control" id="passwordsign-in" placeholder="Password">
-                        </div>
-                        <div>
-								<button type="submit" class="btn btn--cta btn--red">Submit</button>
-                        </div>
+							<div class="form-group form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Remember me</label>
+								<a href="" class="forgotMyPassword">I forgot my password</a>
+							</div>
+						</div>
+						<div>
+							<button type="submit" class="btn btn--cta btn--red">Submit</button>
+						</div>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
+
+<!-- /SignInModal -->
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 	</script>
