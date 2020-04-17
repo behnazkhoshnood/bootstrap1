@@ -137,6 +137,10 @@ a:hover {
     border: 0;
 }
 
+.navbar-toggler-icon{
+    border-radius: 15px;
+}
+
 
 .navbar-brand {
     font-weight: bold;
