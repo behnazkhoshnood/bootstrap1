@@ -53,7 +53,7 @@ a:hover {
    position: relative;
 }
 
-.opaque-overlay{
+ .opaque-overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -137,6 +137,7 @@ a:hover {
     border: 0;
 }
 
+
 .navbar-brand {
     font-weight: bold;
 }
@@ -189,6 +190,10 @@ a:hover {
 }
 
 /* form */
+
+.modal-open{
+    padding-right: 0;
+}
 
 .modal-body{
     background-color: #eec802;
@@ -247,7 +252,6 @@ a:focus{
 .btn--red:active:focus {
     background-color: #df4929;
     border-color:#df4929;
-    position: justify;
 }
 
 .feature {
